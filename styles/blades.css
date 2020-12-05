@@ -1213,3 +1213,22 @@
 }
 
 /*# sourceMappingURL=blades.css.map */
+
+/* WO Dice Rolls */
+
+* .label-stripe-chat {
+font-family: Modesto Condensed;
+}
+
+* .chat-label {
+    font-size: 26px;
+}
+
+* .blades-die-tooltip .die {
+	font-family: Modesto Condensed;
+    font-size: x-large;
+}
+
+.dice-tooltip .dice-rolls .roll.d6 {
+	font-family: Signika;
+}

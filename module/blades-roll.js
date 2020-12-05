@@ -5,7 +5,7 @@
  * @param {string} position
  * @param {string} effect
  */
-export async function bladesRoll(dice_amount, attribute_name = "", position = "risky", effect = "standard") {
+export async function bladesRoll(dice_amount, attribute_name = "", position = "default", effect = "default") {
 
   // Is Dice So Nice enabled ?
   let niceDice = false;
@@ -64,31 +64,38 @@ async function showChatRollMessage(r, zeromode, attribute_name = "", position = 
 
   let position_localize = '';
   switch (position) {
-    case 'controlled':
-      position_localize = 'BITD.PositionControlled'
+    case 'dominant':
+      position_localize = 'WO.PositionDominant'
+      break;               
+    case 'default':        
+    default:               
+      position_localize = 'WO.PositionDefault'
+    case 'dire':           
+      position_localize = 'WO.PositionDire'
+      break;               
+	case 'deadly':         
+      position_localize = 'WO.PositionDeadly'
       break;
-    case 'desperate':
-      position_localize = 'BITD.PositionDesperate'
-      break;
-    case 'risky':
-    default:
-      position_localize = 'BITD.PositionRisky'
+
   }
 
   let effect_localize = '';
   switch (effect) {
-    case 'limited':
-      effect_localize = 'BITD.EffectLimited'
-      break;
-    case 'great':
-      effect_localize = 'BITD.EffectGreat'
-      break;
-    case 'standard':
-    default:
-      effect_localize = 'BITD.EffectStandard'
+    case 'weak':
+      effect_localize = 'WO.EffectWeak'
+      break;             
+    case 'strong':       
+      effect_localize = 'WO.EffectStrong'
+      break;             
+    case 'zero':         
+      effect_localize = 'WO.EffectZero'
+      break;             
+    case 'default':     
+    default:            
+      effect_localize = 'WO.EffectDefault'
   }
 
-  let result = await renderTemplate("systems/blades-in-the-dark/templates/blades-roll.html", {rolls: rolls, roll_status: roll_status, attribute_label: attribute_label, position: position, effect: effect_localize});
+  let result = await renderTemplate("systems/blades-in-the-dark/templates/blades-roll.html", {rolls: rolls, roll_status: roll_status, attribute_label: attribute_label, position: position_localize, effect: effect_localize});
 
   let messageData = {
     speaker: speaker,

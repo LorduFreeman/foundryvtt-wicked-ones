@@ -169,5 +169,15 @@
   "BITD.Wear": "Wear",
   "BITD.Gloom": "Gloom",
 
-  "BITD.Name": "Name"
+  "BITD.Name": "Name",
+  
+  "WO.PositionDominant": "Dominant",
+  "WO.PositionDefault": "Default",
+  "WO.PositionDire": "Dire",
+  "WO.PositionDeadly": "Deadly",
+  
+ "WO.EffectStrong": "Strong",
+ "WO.EffectDefault": "Default",
+ "WO.EffectWeak": "Weak",
+ "WO.EffectZero": "Zero"
 }

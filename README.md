@@ -36,16 +36,6 @@ Crew Types:
 
 ## Screenshots
 
-### Character Sheet, Crew Sheet and Class
-![alt screen][screenshot_all]
-
-### Compendium
-![alt screen][screenshot_compendium]
-
-### Rolls
-![alt screen][screenshot_roll_1]
-![alt screen][screenshot_roll_2]
-
 ## Clocks
 Clocks are now here!
 - To add clock go to Actors tab and create a new Actor of type "🕛 clock".

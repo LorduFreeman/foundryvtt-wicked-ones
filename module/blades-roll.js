@@ -67,16 +67,15 @@ async function showChatRollMessage(r, zeromode, attribute_name = "", position = 
     case 'dominant':
       position_localize = 'WO.PositionDominant'
       break;               
-    case 'default':        
-    default:               
-      position_localize = 'WO.PositionDefault'
     case 'dire':           
       position_localize = 'WO.PositionDire'
       break;               
 	case 'deadly':         
       position_localize = 'WO.PositionDeadly'
       break;
-
+    case 'default':        
+    default:               
+      position_localize = 'WO.PositionDefault'
   }
 
   let effect_localize = '';
@@ -86,13 +85,13 @@ async function showChatRollMessage(r, zeromode, attribute_name = "", position = 
       break;             
     case 'strong':       
       effect_localize = 'WO.EffectStrong'
-      break;             
+      break; 
     case 'zero':         
       effect_localize = 'WO.EffectZero'
-      break;             
+      break; 
     case 'default':     
     default:            
-      effect_localize = 'WO.EffectDefault'
+      effect_localize = 'WO.EffectDefault'	  
   }
 
   let result = await renderTemplate("systems/blades-in-the-dark/templates/blades-roll.html", {rolls: rolls, roll_status: roll_status, attribute_label: attribute_label, position: position_localize, effect: effect_localize});

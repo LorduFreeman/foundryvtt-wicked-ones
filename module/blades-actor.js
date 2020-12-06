@@ -62,17 +62,19 @@ export class BladesActor extends Actor {
             <div class="form-group">
             <label>${game.i18n.localize('BITD.Position')}:</label>
             <select id="pos" name="pos">
-              <option value="controlled">${game.i18n.localize('BITD.PositionControlled')}</option>
-              <option value="risky" selected>${game.i18n.localize('BITD.PositionRisky')}</option>
-              <option value="desperate">${game.i18n.localize('BITD.PositionDesperate')}</option>
+              <option value="dominant">${game.i18n.localize('WO.PositionDominant')}</option>
+              <option value="default" selected>${game.i18n.localize('WO.PositionDefault')}</option>
+              <option value="dire">${game.i18n.localize('WO.PositionDire')}</option>
+              <option value="deadly">${game.i18n.localize('WO.PositionDeadly')}</option>
             </select>
             </div>
             <div class="form-group">
             <label>${game.i18n.localize('BITD.Effect')}:</label>
             <select id="fx" name="fx">
-              <option value="limited">${game.i18n.localize('BITD.EffectLimited')}</option>
-              <option value="standard" selected>${game.i18n.localize('BITD.EffectStandard')}</option>
-              <option value="great">${game.i18n.localize('BITD.EffectGreat')}</option>
+              <option value="strong">${game.i18n.localize('WO.EffectStrong')}</option>	
+              <option value="default" selected>${game.i18n.localize('WO.EffectDefault')}</option>			  
+              <option value="weak">${game.i18n.localize('WO.EffectWeak')}</option>
+              <option value="zero">${game.i18n.localize('WO.EffectZero')}</option>
             </select>
           </div>
         </form>

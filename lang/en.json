@@ -176,8 +176,22 @@
   "WO.PositionDire": "Dire",
   "WO.PositionDeadly": "Deadly",
   
- "WO.EffectStrong": "Strong",
- "WO.EffectDefault": "Default",
- "WO.EffectWeak": "Weak",
- "WO.EffectZero": "Zero"
+  "WO.EffectStrong": "Strong",
+  "WO.EffectDefault": "Default",
+  "WO.EffectWeak": "Weak",
+  "WO.EffectZero": "Zero",
+ 
+  "WO.Roll": "Roll",
+  "WO.RollFailure": "Failure",
+  "WO.RollCriticalSuccess": "Critical!",
+  "WO.RollSuccess": "Success",
+  "WO.RollMixedSuccess": "Mixed Success",
+  "WO.RollSomeDice": "Roll Some Dice!",
+  "WO.RollTokenDescription": "If you want to pull the numbers from a character, select their Token first.",
+  "WO.RollNumberOfDice": "Number of Dice",
+  "WO.RollDoCrit": "Yes, and… ! Not only do you get what you want, but you get something else to go along with it!",
+  "WO.RollDo": "Yes! You get the results that you hoped for!",
+  "WO.RollDoMixed": "Yes, but… You get the results, but they come at a cost. There will be some consequences coming your way. At other times, it may just result in a less effective result.",
+   "WO.RollDoFail": "No, and… Things go as poorly as they could have in that situation. You fail to do it and suffer a consequence."
+  
 }
